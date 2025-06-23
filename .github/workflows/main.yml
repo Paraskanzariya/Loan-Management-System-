@@ -1,13 +1,13 @@
-name: Loan-Management-System
+name : Schedule Job
 
 on: 
-  push: 
-    branches : [ main ]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
-  demo:
+  run-script:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Greetings 
-        run : echo "Hello Management"
+      - name: Print Message
+        run: echo "Hello This is Schedule (Cron) For do work"
