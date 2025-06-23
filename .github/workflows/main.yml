@@ -1,0 +1,13 @@
+name: Loan-Management-System
+
+on: 
+  push: 
+    branches : [ main ]
+
+jobs:
+  demo:
+    runs-on: ubuntu-letest
+
+    steps:
+      - name: Greetings 
+        run : echo "Hello Management"
